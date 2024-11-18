@@ -19,5 +19,9 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ]
     }
+  },
+  content: {
+    // 添加 payloadExtraction 配置
+    payloadExtraction: false // 根据需要设置为 true 或 false
   }
 })
