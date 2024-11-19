@@ -1,17 +1,25 @@
 import { defineNuxtConfig } from 'nuxt/config'
+
 export default defineNuxtConfig({
   devServer: {
     port: 3001,
     host: '0.0.0.0'
   },
+  
+  ssr: true,
+  
   modules: [
     '@nuxt/content'
   ],
+  
   css: [
-    // 使用相对路径
     './assets/css/main.css'
   ],
+  
   app: {
+    // 替换为您的 GitHub 仓库名称
+    baseURL: '/python-deploy/',
+    buildAssetsDir: 'assets',
     head: {
       title: 'Python学习平台',
       meta: [
@@ -20,8 +28,13 @@ export default defineNuxtConfig({
       ]
     }
   },
-  content: {
-    // 添加 payloadExtraction 配置
-    payloadExtraction: false // 根据需要设置为 true 或 false
+  
+  // 添加以下配置来生成静态文件
+  nitro: {
+    preset: 'github-pages',
+    output: {
+      dir: './docs', // 输出到 docs 目录
+      publicDir: './docs'
+    }
   }
 })
