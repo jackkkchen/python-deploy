@@ -3,18 +3,6 @@ const navItems = [
   { 
     title: 'Python基础', 
     path: '/python-basic',
-  },
-  { 
-    title: 'Web开发', 
-    path: '/web-dev',
-  },
-  { 
-    title: '数据分析', 
-    path: '/data-analysis',
-  },
-  { 
-    title: '机器学习', 
-    path: '/machine-learning',
   }
 ]
 </script>

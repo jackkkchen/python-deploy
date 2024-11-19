@@ -19,21 +19,6 @@
       title: 'Python基础', 
       path: '/python-basic',
       description: '学习 Python 的基础语法和概念'
-    },
-    { 
-      title: 'Web开发', 
-      path: '/web-dev',
-      description: '使用 Python 进行网站开发'
-    },
-    { 
-      title: '数据分析', 
-      path: '/data-analysis',
-      description: '数据处理与分析技术'
-    },
-    { 
-      title: '机器学习', 
-      path: '/machine-learning',
-      description: '机器学习基础与应用'
     }
   ]
   </script>
